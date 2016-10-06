@@ -1,5 +1,5 @@
 --- 
-title: "Computation and Experimentation"
+title: "Experimentation and Computation"
 author: "Fábio Madeira"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

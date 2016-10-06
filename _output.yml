@@ -10,7 +10,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./index.html">Computation and Experimentation</a></li>
+        <li><a href="./index.html">Experimentation and Computation</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
         <li class="divider"></li>
