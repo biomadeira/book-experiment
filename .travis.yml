@@ -3,8 +3,10 @@ cache: packages
 
 env:
   global:
-    secure: "ZCJD8oHYALujc0DjUFdaDU0jXoe8ktaVAjHQKGQlILGbUPy+L/8IguO0DoxVXQlgIu8YRb6R/SkTSVlsWSq54oRymorZjXafkqMQqfCKLuPpUAGNW/FvlyENUKaNYSCFJ2BTV++LKQMyORX7V0D9a/rOgGOLNmaneobSjRYcCbsZYLFsAyysANsLd+z4MkTAZ1vLya3FUSeD4FlfrsZAByaV9yyJwPZvK8iiWoV31KtR7WWOkXqzXBk9aX2nLtmGg62tQ1sgos5B+THJ69h2Xt77dTLoqFi4WnPGkJ+Xa8XOAFxf10xkgD/44OfntFl2D8i/jZc7F8gQOkBu6P6b+j4rKIJthZooOpbdMT46CdvwctICEMCbQariuJWyQPRL1yZok15JwKt6dSVdnx05GygzVDYPyM97vdyfbI4CQgFK2WX5nFDnXIsnzuAvX/ils+Fukz/HuMPXlxRdN8c9u1zscQf/PgQ+Sqq05THBae4OP33QMomw0KCjdHz7Aj+DgD9v3VjkgWndkTt5yQH3fyiaROvaHvPdJP1YtwqGM2lQ62B3C7tEccQQoA6XsdXtH2zMKSB32aNnyFMeVzFN6eik9SAgMzWUUnvHodiUDGUC5Nqv119iaOIIfTcPCmg5lZLfCiH1r6ga1nRvLvj+zXi9W9KruTJvwYtJ1ClfWOI="
-before_script:
+    - ENCRYPTION_LABEL: "e5dad7a5dcf1"
+    - COMMIT_AUTHOR_EMAIL: "fbiomadeira@gmail.com"
+
+  before_script:
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
 
