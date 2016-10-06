@@ -3,24 +3,10 @@
 We describe our methods in this chapter.
 
 
+Loading the Plotly R examples:
 ```{r}
 library(plotly)
-
-set.seed(100)
-d <- diamonds[sample(nrow(diamonds), 1000), ]
-plot_ly(d, x = carat, y = price, text = paste("Clarity: ", clarity),
-        mode = "markers", color = carat, size = carat)
-
 ```
-
-```{r}
-library(plotly)
-
-plot_ly(cars, x = speed, y = dist,
-        mode = "markers", color = speed)
-
-```
-
 
 ```{r}
 
@@ -35,7 +21,7 @@ set.seed(100)
 d <- diamonds[sample(nrow(diamonds), 1000), ]
 
 p <- ggplot(data = d, aes(x = carat, y = price)) +
-geom_point(aes(text = paste("Clarity:", clarity)), size = 0.5) +
+geom_point(aes(text = paste("Clarity:", clarity)), size = 1) +
 geom_smooth(aes(colour = cut, fill = cut)) + facet_wrap(~ cut)
 
 (gg <- ggplotly(p))
@@ -43,4 +29,5 @@ geom_smooth(aes(colour = cut, fill = cut)) + facet_wrap(~ cut)
 # plotly_POST(p, "Ploty Example Plot")
 # plotly_POST(p, filename = "test_plot", sharing='public')
 ```
+
 
