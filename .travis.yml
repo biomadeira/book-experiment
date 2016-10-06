@@ -3,10 +3,9 @@ cache: packages
 
 env:
   global:
-    - ENCRYPTION_LABEL: "e5dad7a5dcf1"
-    - COMMIT_AUTHOR_EMAIL: "fbiomadeira@gmail.com"
+    - secure: "MRXPDQSH46vsG1157HzLIfLKJk0KZg7GmFV0LKqy9Cgnexk9vAx6cq5+SFo0AfnyT5Vgg1COX2UTmsEx6S3N7bXg+M5kJ0h/8L3xXscwgZf8hqDwiL95vk273lmrO/Aw60hoV4GSzOT1w3ZnEnbECrcPwq+LHAXwiqa6xjDlE/Xrz3p+HKcHZkeodNcKyRh8v38eDOEbPqRmvnHJ2X2lX2WZ5q42iPfyQE4IfVvxpmCFSI8bB5v5BlGoTnA3wUkgiCGnnKL/Bx2+ao5jPa86iLJujWgCLcIe8yfVsm69p/5p5Ou08JPsfO+xgU+7Mhxer0oyfJWEukVFAkt/SA1X4fFch/lx7MnrfSsP5k3h7a/sJG2AZZjqeea9A7TKuYO109S+uaSurkeDe3Xu2A6z+fByxpMKFAGTpk31hI/wLFO99LlOwVoOrkjQbyNmgafuQt4O/ArxDqZWHPR42adIcBngprurduA6+T93VEZFeGlwOZl5zpPE5aurPp9hSYePes5qi5j1M2HUKVrpceUrM2M5oKL5WJ9rY5/5ZOkVUJxMPsLTh6J/EtxrmVY8/hHokAi5bESwqIi2d1ABLe1AUhXQ0VbiYyV1jmTjoZjQloZVBpr6Pk8pXD4ABpgqDpZZfkgsVW/IhCRevq69Uumct4ezbIN39VzF8Y5i9RWe6Pc="
 
-  before_script:
+before_script:
   - chmod +x ./_build.sh
   - chmod +x ./_deploy.sh
 
