@@ -1,3 +1,22 @@
+### .gitignore_global -> .gitconfig
+# System Garbage, etc.
+*~
+._*
+.DS_Store
+Thumbs.db
+Icon\r
+
+# Other
+*.orig
+*.core
+*.rej
+*.swp
+*.log
+*.tmp
+*.bak
+.*\#.*\#$
+/lib/
+
 # History files
 .Rhistory
 .Rapp.history
@@ -31,3 +50,91 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+.Rproj.user
+
+# Produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# Pycharm, IntelliJ, etc.
+.idea
+
+# Python
+*.pyo
+*.pyc
+*.py.*
+*/*.pyc
+__pycache__
+__pycache__/
+*.py[cod]
+.settings
+.project
+.pydevproject
+target/
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter and iPython Notebook
+.ipynb_checkpoints
+# *.ipynb
+.ipynb_*
+
+# Jekyll, Ruby, etc.
+/_site
+_site/*
+_build
+.jekyll-metadata
+*.gem
+*.rbc
+.config
+.sass-cache
+Gemfile.lock
+Gemfile
+
+# Bundler
+.bundle
+vendor/bundle/
+
+# Environments, Unit test, coverage reports, etc.
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# C extensions
+*.so
