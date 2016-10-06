@@ -48,7 +48,7 @@ vignettes/*.pdf
 /cache/
 
 # bookdown compiled files
-/_book
+#/_book
 /_bookdown_files
 
 # Temporary files created by R markdown
