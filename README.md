@@ -1,2 +1,3 @@
 # book-experiment
-Experimental book using bookdown
+
+This is an experimental book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown).
