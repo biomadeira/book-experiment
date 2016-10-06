@@ -9,6 +9,7 @@ git config --global user.email "fbiomadeira@gmail.com"
 git config --global user.name "Fábio Madeira"
 
 git clone -b gh-pages https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git book-output
+echo https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git
 cd book-output
 cp -r ../_book/* ./
 git add --all *
