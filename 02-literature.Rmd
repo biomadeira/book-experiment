@@ -16,13 +16,3 @@ print(x.split(' '))
 ```
 
 
-```{python}
-
-import sys
-print(sys.path)
-
-import pandas as pd
-
-df = pd.DataFrame()
-```
-
