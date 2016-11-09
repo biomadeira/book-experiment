@@ -25,7 +25,7 @@
 
 <meta name="author" content="Fábio Madeira">
 
-<meta name="date" content="2016-10-06">
+<meta name="date" content="2016-11-09">
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -153,6 +153,71 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">devtools::<span class="kw">install_github</span>(<span class="st">&quot;rstudio/bookdown&quot;</span>)</code></pre></div>
 <p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
 <p>To compile this example to PDF, you need to install XeLaTeX.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ip &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">installed.packages</span>()[,<span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">3</span>:<span class="dv">4</span>)])
+<span class="kw">rownames</span>(ip) &lt;-<span class="st"> </span><span class="ot">NULL</span>
+ip &lt;-<span class="st"> </span>ip[<span class="kw">is.na</span>(ip$Priority),<span class="dv">1</span>:<span class="dv">2</span>,drop=<span class="ot">FALSE</span>]
+<span class="kw">print</span>(ip, <span class="dt">row.names=</span><span class="ot">FALSE</span>)</code></pre></div>
+<pre><code>##       Package  Version
+##    assertthat      0.1
+##     base64enc    0.1-3
+##            BH 1.60.0-2
+##        bitops    1.0-6
+##      bookdown      0.1
+##       caTools   1.17.1
+##    colorspace    1.2-7
+##          curl      2.2
+##           DBI    0.5-1
+##      devtools   1.12.0
+##     dichromat    2.0-0
+##        digest   0.6.10
+##         dplyr    0.5.0
+##      evaluate     0.10
+##       ggplot2    2.1.0
+##         git2r   0.15.0
+##        gtable    0.2.0
+##        hexbin   1.27.1
+##         highr      0.6
+##     htmltools    0.3.5
+##   htmlwidgets      0.7
+##        httpuv    1.3.3
+##          httr    1.2.1
+##      jsonlite      1.1
+##         knitr     1.15
+##      labeling      0.3
+##      lazyeval    0.2.0
+##      magrittr      1.5
+##      markdown    0.7.7
+##       memoise    1.0.0
+##          mime      0.5
+##        miniUI    0.1.1
+##       munsell    0.4.3
+##       openssl    0.9.5
+##       packrat  0.4.8-1
+##           PKI    0.1-3
+##        plotly    4.5.2
+##          plyr    1.8.4
+##         purrr    0.2.2
+##            R6    2.2.0
+##  RColorBrewer    1.1-2
+##          Rcpp   0.12.7
+##         RCurl 1.95-4.8
+##      reshape2    1.4.2
+##       RJSONIO    1.3-0
+##     rmarkdown      1.1
+##     rsconnect      0.5
+##    rstudioapi      0.6
+##        scales    0.4.1
+##         shiny   0.14.2
+##   sourcetools    0.1.5
+##       stringi    1.1.2
+##       stringr    1.1.0
+##        tibble      1.2
+##         tidyr    0.6.0
+##   viridisLite    0.1.3
+##       whisker    0.3-2
+##         withr    1.0.2
+##        xtable    1.8-2
+##          yaml   2.1.13</code></pre>
 
 </div>
             </section>
