@@ -1,3 +1,28 @@
 # Literature
 
 Here is a review of existing methods.
+
+
+```{r}
+Sys.setenv(RPYTHON_PYTHON_VERSION=3)
+```
+
+```{python}
+
+x = 'hello, python world!'
+print(x)
+print(x.split(' '))
+
+```
+
+
+```{python}
+
+import sys
+print(sys.path)
+
+import pandas as pd
+
+df = pd.DataFrame()
+```
+
